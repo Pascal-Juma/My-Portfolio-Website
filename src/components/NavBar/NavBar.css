@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    font-weight: 500;
+    margin-inline: 90px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    gap: 1px;
+}
+.logo svg{
+    color: var(--blue-color);
+}
+.links{
+    display: flex;
+    gap: 20px;
+    font-weight: 300;
+    font-family: var(--prime-font);
+}
