@@ -24,6 +24,19 @@ nav{
     font-weight: 300;
     font-family: var(--prime-font);
 }
+.nav-link {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  .nav-link:hover {
+    color: var(--blue-color); 
+  }
+  .nav-link.active {
+    color: var(--blue-color); 
+    font-weight: 500;
+    border-bottom: 2px solid var(--blue-color); 
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  }
 .nav-btn{
     padding: 5px;
     cursor: pointer;

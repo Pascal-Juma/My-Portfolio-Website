@@ -34,6 +34,7 @@ function NavBar() {
             smooth={true}
             offset={-70}
             duration={500}
+            className="nav-link"
           >
             Home
           </Link>
@@ -44,6 +45,7 @@ function NavBar() {
             smooth={true}
             offset={-70}
             duration={500}
+            className="nav-link"
           >
             About
           </Link>
@@ -54,6 +56,7 @@ function NavBar() {
             smooth={true}
             offset={-70}
             duration={500}
+            className="nav-link"
           >
             Education
           </Link>
@@ -64,6 +67,7 @@ function NavBar() {
             smooth={true}
             offset={-70}
             duration={500}
+            className="nav-link"
           >
             Projects
           </Link>
@@ -74,6 +78,7 @@ function NavBar() {
             smooth={true}
             offset={-70}
             duration={500}
+            className="nav-link"
           >
             Achievements
           </Link>
@@ -84,6 +89,7 @@ function NavBar() {
             smooth={true}
             offset={-70}
             duration={500}
+            className="nav-link"
           >
             Contact
           </Link>
