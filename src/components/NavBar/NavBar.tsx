@@ -18,7 +18,7 @@ function NavBar() {
         <div className="logo">
           <Typography
             variant="h2"
-            color="var(--blue-color)"
+            color="var(--green-color)"
             fontSize={34}
             fontWeight={500}
             fontFamily="var(--prime-font)"

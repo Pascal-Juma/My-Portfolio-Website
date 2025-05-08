@@ -16,29 +16,29 @@ nav{
     gap: 1px;
 }
 .logo svg{
-    color: var(--blue-color);
+    color: var(--green-color);
 }
 .links{
     display: flex;
     gap: 20px;
     font-weight: 300;
-    font-family: var(--prime-font);
+    font-family: var(--code-font);
 }
 .nav-link {
     cursor: pointer;
     transition: color 0.3s ease;
   }
   .nav-link:hover {
-    color: var(--blue-color); 
+    color: var(--green-color); 
   }
   .nav-link.active {
-    color: var(--blue-color); 
+    color: var(--green-color); 
     font-weight: 500;
-    border-bottom: 2px solid var(--blue-color); 
+    border-bottom: 2px solid var(--green-color); 
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   }
 .nav-btn{
-    padding: 5px;
+    padding-inline: 5px;
     cursor: pointer;
     background: transparent;
     border: none;
@@ -56,7 +56,7 @@ nav{
         position: fixed;
         top: 10px;
         left: 10px;
-        font-size: 25px;
+        font-size: 35px;
     }
     nav{
         display: flex;

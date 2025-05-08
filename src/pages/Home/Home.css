@@ -1,0 +1,38 @@
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+.image-content{
+    width: 310px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+.image-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.circle-holder{
+    position: absolute;
+    background-color: var(--dark-green);
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    top: 5px;
+    right: 58px;
+    z-index: -3;    
+}
+.circle-inner{
+    position: absolute;
+    background-color: var(--color-black);
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    top: 14.6%;
+    right: 14.7%;
+    z-index: -1;  
+}
