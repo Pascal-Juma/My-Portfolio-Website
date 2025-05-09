@@ -1,6 +1,6 @@
-import { Box, Typography, Card, Button, ButtonProps } from "@mui/material";
+import { Stack, Typography, Button, ButtonProps } from "@mui/material";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
-import { useTypewriter, Cursor} from "react-simple-typewriter";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import DownloadIcon from "@mui/icons-material/Download";
 import { blue } from "@mui/material/colors";
@@ -8,6 +8,7 @@ import { FaReact, FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiTypescript } from "react-icons/si";
 import { Element } from "react-scroll";
+import NavBar from "../../components/NavBar/NavBar";
 import "./Home.css";
 import pascal from "../../assets/pascalj.png";
 
@@ -46,7 +47,7 @@ const HeroCta = styled(Button)<ButtonProps>(({ theme }) => ({
 }));
 function Home() {
   const [texta] = useTypewriter({
-    words: ['Introducing'],
+    words: ["Introducing"],
     loop: true,
     typeSpeed: 150,
     deleteSpeed: 150,
@@ -59,74 +60,94 @@ function Home() {
   });
   return (
     <>
-    <Element name="home">
-      <Box
-        component="section"
-        sx={{
-          display: "flex",
-          marginLeft: 13,
-          height: "84.8vh",
-        }}
-      >
-        <Card
+      <Element name="home">
+        <NavBar />
+        <Stack
+          component="section"
+          direction={{ xs: "column", sm: "column", md: "column", lg: "row" }}
+          spacing={{ xs: 4, sm: 4, md: 4 }}
           sx={{
-            backgroundColor: "var(--color-black)",
-            border: "none",
+            display: "flex",
+            justifyContent: {
+              xs: "center",
+              sm: "center",
+              md: "center",
+              lg: "center",
+            },
+            alignItems: {
+              xs: "center",
+              sm: "center",
+              md: "center",
+              lg: "flex-start",
+            },
+            marginLeft: 10,
+            maxHeight: "84.8vh",
           }}
         >
-          <ThemeProvider theme={theme}>
-            <Typography
-              variant="h6"
-              className="introducing"
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                mt: 9,
-              }}
+          <div className="hero-content">
+            <ThemeProvider theme={theme}>
+              <Typography
+                variant="h6"
+                className="introducing"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  mt: {
+                    xs: 13,
+                    sm: 2,
+                    md: 2,
+                    lg: 9,
+                  },
+                }}
+              >
+                <HorizontalRuleIcon /> {texta} <Cursor />
+              </Typography>
+              <Typography variant="h4">I am</Typography>
+              <Typography variant="h3" sx={{ marginBottom: 2, height: 50, fontSize: {
+                xs: "40px",
+                sm: "52px",
+                md: "52px",
+                lg: "52px",
+              } }}>
+                {textb}
+              </Typography>
+              <Typography variant="body1" sx={{ maxWidth: 500, marginBottom: 2}}>
+                I build clean, fast, and responsive websites that solve real
+                problems. With hands-on experience in React and Node.js, I focus
+                on creating smooth user experiences and maintaining reliable web
+                solutions that grow with your needs.
+              </Typography>
+            </ThemeProvider>
+            <HeroCta
+              variant="contained"
+              size="large"
+              startIcon={<DownloadIcon />}
             >
-              <HorizontalRuleIcon /> {texta} <Cursor />
-            </Typography>
-            <Typography variant="h4">I am</Typography>
-            <Typography variant="h3" sx={{ marginBottom: 2, height: 50}}>
-              {textb}
-            </Typography>
-            <Typography variant="body1" sx={{ width: 500, marginBottom: 2 }}>
-              I build clean, fast, and responsive websites that solve real
-              problems. With hands-on experience in React and Node.js, I focus
-              on creating smooth user experiences and maintaining reliable web
-              solutions that grow with your needs.
-            </Typography>
-          </ThemeProvider>
-          <HeroCta
-            variant="contained"
-            size="large"
-            startIcon={<DownloadIcon />}
-          >
-            Download CV
-          </HeroCta>
-        </Card>
-        <div className="image-container">
-          <div className="image-content">
-            <img src={pascal} alt="image" />
+              Download CV
+            </HeroCta>
           </div>
-          <div className="circle-holder">
-            <div className="circle-inner"></div>
+          <div className="image-container">
+            <div className="image-content">
+              <img src={pascal} alt="image" />
+            </div>
+            <div className="outer-circle">
+              <div className="inner-circle"></div>
+              <div className="icon-a">
+                <FaReact />
+              </div>
+              <div className="icon-b">
+                <FaNodeJs />
+              </div>
+              <div className="icon-c">
+                <BiLogoPostgresql />
+              </div>
+              <div className="icon-d">
+                <SiTypescript />
+              </div>
+            </div>
           </div>
-          <div className="icon-a">
-            <FaReact />
-          </div>
-          <div className="icon-b">
-            <FaNodeJs />
-          </div>
-          <div className="icon-c">
-            <BiLogoPostgresql />
-          </div>
-          <div className="icon-d">
-            <SiTypescript />
-          </div>
-        </div>
-      </Box>
-    </Element>
+        </Stack>
+      </Element>
     </>
   );
 }

@@ -33,9 +33,10 @@ nav{
   }
   .nav-link.active {
     color: var(--green-color)!important; 
-    font-weight: 500;
-    border-bottom: 2px solid var(--green-color); 
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    font-weight: 500!important;
+    border-bottom: 2px solid var(--green-color)!important; 
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2)!important;
+    border-spacing: 1px!important;
   }
 .nav-btn{
     padding-inline: 5px;
