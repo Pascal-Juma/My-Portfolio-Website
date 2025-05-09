@@ -1,3 +1,4 @@
+import { PiHourglassSimpleFill } from "react-icons/pi";
 import { useRef } from "react";
 import { Typography } from "@mui/material";
 import { Link } from "react-scroll";
@@ -22,8 +23,12 @@ function NavBar() {
             fontSize={34}
             fontWeight={500}
             fontFamily="var(--prime-font)"
+            sx={{
+    display: "flex",
+    alignItems: "center", justifyContent: "center",}}
+        
           >
-            Meta Labs
+            < PiHourglassSimpleFill className="logo-icon"/> Meta Labs
           </Typography>
         </div>
         <div className="links">

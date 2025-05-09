@@ -15,8 +15,10 @@ nav{
     font-size: 36px;
     gap: 1px;
 }
-.logo svg{
-    color: var(--green-color);
+.logo-icon{
+    color: var(--blue-color);
+    transform: rotate(90deg);
+    font-size: 40px;
 }
 .links{
     display: flex;
