@@ -8,12 +8,13 @@
     --primary-color: #FFFFFF;
     --secondary-color: #333333;
     --color-black: #0F1215;
+    --contrast-black: #18191a;
     --third-color:#7C838E;
     --light-grey: #C5C5C5;
     --prime-color: #050505;
     --blue-color: #2196f3;
     --green-color: #52b202;
-    --dark-green: #469406;
+    --dark-green: #2e6303;
     --b: 1px solid var(--primary-color);
     --primary-font: "Poppins", sans-serif;
     --prime-font: "Open Sans", sans-serif;

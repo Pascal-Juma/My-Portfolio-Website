@@ -3,6 +3,9 @@ import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import DownloadIcon from "@mui/icons-material/Download";
 import { blue } from "@mui/material/colors";
+import { FaReact, FaNodeJs } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiTypescript } from "react-icons/si";
 import "./Home.css";
 import pascal from "../../assets/pascalj.png";
 
@@ -88,6 +91,18 @@ function Home() {
           </div>
           <div className="circle-holder">
             <div className="circle-inner"></div>
+          </div>
+          <div className="icon-a">
+            <FaReact />
+          </div>
+          <div className="icon-b">
+            <FaNodeJs />
+          </div>
+          <div className="icon-c">
+            <BiLogoPostgresql />
+          </div>
+          <div className="icon-d">
+            <SiTypescript />
           </div>
         </div>
       </Box>

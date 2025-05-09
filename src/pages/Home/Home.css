@@ -6,10 +6,9 @@
     position: relative;
 }
 .image-content{
-    width: 310px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    width: 420px;
     overflow: hidden;
+    margin-left: 32px;
 }
 .image-content img{
     width: 100%;
@@ -19,11 +18,11 @@
 .circle-holder{
     position: absolute;
     background-color: var(--dark-green);
-    width: 480px;
-    height: 480px;
+    width: 490px;
+    height: 490px;
     border-radius: 50%;
     top: 5px;
-    right: 58px;
+    right: 28px;
     z-index: -3;    
 }
 .circle-inner{
@@ -32,7 +31,75 @@
     width: 340px;
     height: 340px;
     border-radius: 50%;
-    top: 14.6%;
-    right: 14.7%;
+    top: 15.3%;
+    right: 15.4%;
     z-index: -1;  
+}
+.icon-a{
+    position: absolute;
+    background-color: var(--contrast-black);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    top: 11.6%;
+    right: 9.7%;
+    z-index: -1;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-b{
+    position: absolute;
+    background-color: var(--contrast-black);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    bottom: 31.6%;
+    right: 1%;
+    z-index: -1;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-c{
+    position: absolute;
+    background-color: var(--contrast-black);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    top: 11.6%;
+    left: 11.7%;
+    z-index: -1; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.icon-d{
+    position: absolute;
+    background-color: var(--contrast-black);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    bottom: 31.6%;
+    left: 4%;
+    z-index: -1;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-a svg{
+    color: var(--green-color);
+    font-size: 45px;
+}
+.icon-b svg{
+    color: var(--green-color);
+    font-size: 45px;
+}
+.icon-c svg{
+    color: var(--green-color);
+    font-size: 45px;
+}
+.icon-d svg{
+    color: var(--green-color);
+    font-size: 45px;
 }
