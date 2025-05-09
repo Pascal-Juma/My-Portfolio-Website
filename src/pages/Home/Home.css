@@ -35,6 +35,14 @@
     right: 15.4%;
     z-index: -1;  
 }
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 .icon-a{
     position: absolute;
     background-color: var(--contrast-black);
@@ -47,6 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: rotate 8.5s linear infinite; 
 }
 .icon-b{
     position: absolute;
@@ -60,6 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: rotate 8.5s linear infinite;
 }
 .icon-c{
     position: absolute;
@@ -73,6 +83,7 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+    animation: rotate 8.5s linear infinite;
 }
 .icon-d{
     position: absolute;
@@ -86,6 +97,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: rotate 8.5s linear infinite;
 }
 .icon-a svg{
     color: var(--green-color);
@@ -101,5 +113,6 @@
 }
 .icon-d svg{
     color: var(--green-color);
-    font-size: 45px;
+    font-size: 35px;
 }
+

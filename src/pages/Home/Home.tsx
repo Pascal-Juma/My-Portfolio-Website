@@ -1,11 +1,13 @@
 import { Box, Typography, Card, Button, ButtonProps } from "@mui/material";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
+import { useTypewriter, Cursor} from "react-simple-typewriter";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import DownloadIcon from "@mui/icons-material/Download";
 import { blue } from "@mui/material/colors";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiTypescript } from "react-icons/si";
+import { Element } from "react-scroll";
 import "./Home.css";
 import pascal from "../../assets/pascalj.png";
 
@@ -43,8 +45,21 @@ const HeroCta = styled(Button)<ButtonProps>(({ theme }) => ({
   },
 }));
 function Home() {
+  const [texta] = useTypewriter({
+    words: ['Introducing'],
+    loop: true,
+    typeSpeed: 150,
+    deleteSpeed: 150,
+  });
+  const [textb] = useTypewriter({
+    words: ["Pascal Juma", "a Web Developer", "an ML Enthusiast"],
+    loop: true,
+    typeSpeed: 150,
+    deleteSpeed: 150,
+  });
   return (
     <>
+    <Element name="home">
       <Box
         component="section"
         sx={{
@@ -62,13 +77,18 @@ function Home() {
           <ThemeProvider theme={theme}>
             <Typography
               variant="h6"
-              sx={{ display: "flex", alignItems: "center", mt: 9 }}
+              className="introducing"
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                mt: 9,
+              }}
             >
-              <HorizontalRuleIcon /> Introducing
+              <HorizontalRuleIcon /> {texta} <Cursor />
             </Typography>
-            <Typography variant="h4">Hello</Typography>
-            <Typography variant="h3" sx={{ marginBottom: 2 }}>
-              I'm Pascal Juma
+            <Typography variant="h4">I am</Typography>
+            <Typography variant="h3" sx={{ marginBottom: 2, height: 50}}>
+              {textb}
             </Typography>
             <Typography variant="body1" sx={{ width: 500, marginBottom: 2 }}>
               I build clean, fast, and responsive websites that solve real
@@ -106,6 +126,7 @@ function Home() {
           </div>
         </div>
       </Box>
+    </Element>
     </>
   );
 }

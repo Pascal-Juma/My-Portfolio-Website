@@ -84,7 +84,7 @@ function NavBar() {
           </Link>
           <Link
             activeClass="active"
-            to="contacts"
+            to="contact"
             spy={true}
             smooth={true}
             offset={-70}
