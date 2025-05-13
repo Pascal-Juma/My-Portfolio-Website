@@ -24,11 +24,12 @@ function NavBar() {
             fontWeight={500}
             fontFamily="var(--prime-font)"
             sx={{
-    display: "flex",
-    alignItems: "center", justifyContent: "center",}}
-        
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
           >
-            < PiHourglassSimpleFill className="logo-icon"/> Meta Labs
+            <PiHourglassSimpleFill className="logo-icon" /> Meta Labs
           </Typography>
         </div>
         <div className="links">

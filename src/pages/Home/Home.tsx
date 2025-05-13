@@ -53,7 +53,7 @@ function Home() {
     deleteSpeed: 150,
   });
   const [textb] = useTypewriter({
-    words: ["Pascal Juma", "a Web Developer", "an ML Enthusiast"],
+    words: ["Pascal Juma", "a Web Developer", "a Game Developer", "an ML Enthusiast"],
     loop: true,
     typeSpeed: 150,
     deleteSpeed: 150,
@@ -80,7 +80,7 @@ function Home() {
               md: "center",
               lg: "flex-start",
             },
-            marginLeft: 10,
+            marginLeft: 7,
             maxHeight: "84.8vh",
           }}
         >
@@ -103,15 +103,25 @@ function Home() {
                 <HorizontalRuleIcon /> {texta} <Cursor />
               </Typography>
               <Typography variant="h4">I am</Typography>
-              <Typography variant="h3" sx={{ marginBottom: 2, height: 50, fontSize: {
-                xs: "40px",
-                sm: "52px",
-                md: "52px",
-                lg: "52px",
-              } }}>
+              <Typography
+                variant="h3"
+                sx={{
+                  marginBottom: 2,
+                  height: 50,
+                  fontSize: {
+                    xs: "40px",
+                    sm: "52px",
+                    md: "52px",
+                    lg: "52px",
+                  },
+                }}
+              >
                 {textb}
               </Typography>
-              <Typography variant="body1" sx={{ maxWidth: 500, marginBottom: 2}}>
+              <Typography
+                variant="body1"
+                sx={{ maxWidth: 500, marginBottom: 2 }}
+              >
                 I build clean, fast, and responsive websites that solve real
                 problems. With hands-on experience in React and Node.js, I focus
                 on creating smooth user experiences and maintaining reliable web
