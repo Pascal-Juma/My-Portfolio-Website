@@ -34,7 +34,7 @@ function About() {
               objectFit: "contain",
               overflow: "hidden",
               borderRadius: "10px",
-              boxShadow: "0px 0px 12px rgba(148, 143, 143, 0.9)",
+              boxShadow: "0px 0px 10px rgba(148, 143, 143, 0.9)",
             }}
           />
         </Box>
