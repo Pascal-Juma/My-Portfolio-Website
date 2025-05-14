@@ -1,10 +1,17 @@
-nav{
+.header-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px;
     font-weight: 500;
-    margin-inline: 90px;
+    padding-inline: 90px;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 1000;
+}
+.scroll-nav{
+    background-color: rgba(5, 5, 5, .7);
 }
 .nav-close-btn{
     display: none;
@@ -33,12 +40,12 @@ nav{
   .nav-link:hover {
     color: var(--green-color); 
   }
-  .nav-link.active {
-    color: var(--green-color)!important; 
-    font-weight: 500!important;
-    border-bottom: 2px solid var(--green-color)!important; 
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2)!important;
-    border-spacing: 1px!important;
+  .header-nav .links .nav-link.active {
+    color: var(--green-color); 
+    font-weight: 500;
+    border-bottom: 2px solid var(--green-color); 
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    border-spacing: 1px;
   }
 .nav-btn{
     padding-inline: 5px;

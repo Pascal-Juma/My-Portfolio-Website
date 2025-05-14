@@ -1,5 +1,5 @@
 import { PiHourglassSimpleFill } from "react-icons/pi";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Typography } from "@mui/material";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -7,6 +7,23 @@ import "./NavBar.css";
 
 function NavBar() {
   const navRef = useRef<HTMLDivElement>(null);
+  
+  const [color, setColor] = useState(false);
+useEffect(() => {
+  const changeColor = () => {
+    if (window.scrollY >= 90) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
+
+    return () => {
+    window.removeEventListener("scroll", changeColor);
+  };
+}, []);
 
   const showNav = () => {
     if (navRef.current) {
@@ -15,7 +32,7 @@ function NavBar() {
   };
   return (
     <>
-      <nav ref={navRef}>
+      <nav ref={navRef} className={color ? "header-nav scroll-nav" : "header-nav"}>
         <div className="logo">
           <Typography
             variant="h2"
@@ -55,6 +72,17 @@ function NavBar() {
           >
             About
           </Link>
+                    <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="nav-link"
+          >
+            Projects
+          </Link>
           <Link
             activeClass="active"
             to="education"
@@ -65,17 +93,6 @@ function NavBar() {
             className="nav-link"
           >
             Education
-          </Link>
-          <Link
-            activeClass="active"
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="nav-link"
-          >
-            Projects
           </Link>
           <Link
             activeClass="active"

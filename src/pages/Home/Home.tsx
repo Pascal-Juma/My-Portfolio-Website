@@ -8,7 +8,6 @@ import { FaReact, FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiTypescript } from "react-icons/si";
 import { Element } from "react-scroll";
-import NavBar from "../../components/NavBar/NavBar";
 import "./Home.css";
 import pascal from "../../assets/pascalj.png";
 
@@ -61,7 +60,6 @@ function Home() {
   return (
     <>
       <Element name="home">
-        <NavBar />
         <Stack
           component="section"
           direction={{ xs: "column", sm: "column", md: "column", lg: "row" }}
