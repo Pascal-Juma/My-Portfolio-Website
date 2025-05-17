@@ -26,6 +26,12 @@
     0 55%
   );
 }
+@media screen and (max-width: 31.25em){
+    .plate-outer{
+          width: 383px;
+  height: 468px;
+    }
+}
 .plate-inner {
   display: flex;
   width: 510px;
@@ -35,24 +41,14 @@
   box-shadow: 0 0 15px var(--green-color);
   background: var(--darker-green);
   align-items: center;
-  clip-path: polygon(
-    6% 14%,
-    26% 14%,
-    29% 17%,
-    55% 17%,
-    58% 14%,
-    72% 15%,
-    78% 20%,
-    86% 55%,
-    71% 66%,
-    67% 62%,
-    47% 63%,
-    44% 60%,
-    34% 60%,
-    26% 65%,
-    11% 65%,
-    0 55%
-  );
+  clip-path: inherit;
+  overflow: hidden;
   padding-bottom: 101px;
-  /* padding-left: 23px; */
+}
+@media screen and (max-width: 31.25em){
+    .plate-inner{
+  width: 385px;
+  height: 458px;
+  font-size: 7px;
+    }
 }

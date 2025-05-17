@@ -13,30 +13,43 @@ function Achievements() {
     typeSpeed: 150,
     deleteSpeed: 150,
   });
+
+  const [texta] = useTypewriter({
+    words: ["Contact"],
+    loop: true,
+    typeSpeed: 150,
+    deleteSpeed: 150,
+  });
+
   return (
     <Element name="achievements">
+      <Typography
+        fontFamily="var(--prime-font)"
+        color="var(--green-color)"
+        fontSize="31px"
+        textAlign="center"
+        mt={2}
+      >
+        <HorizontalRuleIcon />
+        {text}
+        <Cursor />
+      </Typography>
       <Stack
-        mt={4}
-        direction="column"
-        gap={3}
+        direction="row"
         sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           flexWrap: "wrap",
+          ml: {
+            xs: 6,
+            sm: 6,
+            md: 0,
+            lg: 0,
+          },
+          position: "relative",
         }}
       >
-        <Typography
-          fontFamily="var(--prime-font)"
-          color="var(--green-color)"
-          fontSize="31px"
-          textAlign="center"
-          mt={1}
-        >
-          <HorizontalRuleIcon />
-          {text}
-          <Cursor />
-        </Typography>
         <Plate
           achievementTitle="Software Development Certification"
           company="Issued by: TEACH2GIVE • April, 2025"
@@ -49,6 +62,23 @@ function Achievements() {
           reason="Awarded in recognition of participating in the OriginFest Hackathon challenge."
           link="https://drive.google.com/file/d/1pLnluSWdkD-dzCnz_njzTtbpIp5apqdF/view?usp=sharing"
         />
+        <Typography
+          fontFamily="var(--prime-font)"
+          color="var(--green-color)"
+          fontSize="31px"
+          textAlign="center"
+          mt={2}
+          sx={{
+            position: "absolute",
+            bottom: "5%",
+            left: "50%",
+            transform: "translateX(-50%)",
+          }}
+        >
+          <HorizontalRuleIcon />
+          {texta}
+          <Cursor />
+        </Typography>
       </Stack>
     </Element>
   );
