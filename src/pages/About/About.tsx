@@ -8,7 +8,6 @@ import ReactPlayer from "react-player";
 import { FaBriefcase } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
 import game from "../../assets/game.mp4";
-import "./About.css";
 
 function About() {
   const [text] = useTypewriter({

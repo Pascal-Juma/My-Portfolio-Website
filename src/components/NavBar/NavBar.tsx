@@ -7,23 +7,23 @@ import "./NavBar.css";
 
 function NavBar() {
   const navRef = useRef<HTMLDivElement>(null);
-  
-  const [color, setColor] = useState(false);
-useEffect(() => {
-  const changeColor = () => {
-    if (window.scrollY >= 90) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
 
-  window.addEventListener("scroll", changeColor);
+  const [color, setColor] = useState(false);
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor(true);
+      } else {
+        setColor(false);
+      }
+    };
+
+    window.addEventListener("scroll", changeColor);
 
     return () => {
-    window.removeEventListener("scroll", changeColor);
-  };
-}, []);
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, []);
 
   const showNav = () => {
     if (navRef.current) {
@@ -32,7 +32,10 @@ useEffect(() => {
   };
   return (
     <>
-      <nav ref={navRef} className={color ? "header-nav scroll-nav" : "header-nav"}>
+      <nav
+        ref={navRef}
+        className={color ? "header-nav scroll-nav" : "header-nav"}
+      >
         <div className="logo">
           <Typography
             variant="h2"
@@ -56,7 +59,7 @@ useEffect(() => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={10}
             className="nav-link"
           >
             Home
@@ -67,18 +70,18 @@ useEffect(() => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={10}
             className="nav-link"
           >
             About
           </Link>
-                    <Link
+          <Link
             activeClass="active"
             to="projects"
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={10}
             className="nav-link"
           >
             Projects
@@ -89,7 +92,7 @@ useEffect(() => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={10}
             className="nav-link"
           >
             Education
@@ -100,7 +103,7 @@ useEffect(() => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={10}
             className="nav-link"
           >
             Achievements
@@ -111,7 +114,7 @@ useEffect(() => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={10}
             className="nav-link"
           >
             Contact

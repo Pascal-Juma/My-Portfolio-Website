@@ -6,6 +6,7 @@
 }
 :root{
     --primary-color: #FFFFFF;
+    --darken-white: #FFFFFFCC;
     --secondary-color: #333333;
     --color-black: #0F1215;
     --contrast-black: #1e1f20;
@@ -13,8 +14,11 @@
     --light-grey: #C5C5C5;
     --prime-color: #050505;
     --blue-color: #2196f3;
+    --blue-brighter: #43a8fc;
     --green-color: #52b202;
+    --brighter-green: #6be706;
     --dark-green: #2e6303;
+    --darker-green: rgba(2, 34, 29, 0.9);
     --b: 1px solid var(--primary-color);
     --primary-font: "Poppins", sans-serif;
     --prime-font: "Open Sans", sans-serif;
@@ -24,6 +28,10 @@
 html {
     scroll-behavior: smooth;
   }
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
 body{
     background-color: var(--color-black);
     color: var(--primary-color);

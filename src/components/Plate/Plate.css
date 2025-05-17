@@ -1,0 +1,58 @@
+.plate-outer {
+  display: flex;
+  width: 516px;
+  height: 468px;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 15px var(--green-color);
+  background: var(--green-color);
+  align-items: center;
+  clip-path: polygon(
+    6% 14%,
+    26% 14%,
+    29% 17%,
+    55% 17%,
+    58% 14%,
+    72% 15%,
+    78% 20%,
+    86% 55%,
+    71% 66%,
+    67% 62%,
+    47% 63%,
+    44% 60%,
+    34% 60%,
+    26% 65%,
+    11% 65%,
+    0 55%
+  );
+}
+.plate-inner {
+  display: flex;
+  width: 510px;
+  height: 460px;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 15px var(--green-color);
+  background: var(--darker-green);
+  align-items: center;
+  clip-path: polygon(
+    6% 14%,
+    26% 14%,
+    29% 17%,
+    55% 17%,
+    58% 14%,
+    72% 15%,
+    78% 20%,
+    86% 55%,
+    71% 66%,
+    67% 62%,
+    47% 63%,
+    44% 60%,
+    34% 60%,
+    26% 65%,
+    11% 65%,
+    0 55%
+  );
+  padding-bottom: 101px;
+  /* padding-left: 23px; */
+}
