@@ -1,11 +1,19 @@
-import { Stack, Typography, Button, ButtonProps } from "@mui/material";
+import {
+  Stack,
+  Typography,
+  Button,
+  ButtonProps,
+  Tooltip,
+  IconButton,
+} from "@mui/material";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import DownloadIcon from "@mui/icons-material/Download";
 import { blue } from "@mui/material/colors";
-import { FaReact, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaGithub, FaLinkedin } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { FaXTwitter } from "react-icons/fa6";
 import { SiTypescript } from "react-icons/si";
 import { Element } from "react-scroll";
 import "./Home.css";
@@ -52,7 +60,12 @@ function Home() {
     deleteSpeed: 150,
   });
   const [textb] = useTypewriter({
-    words: ["Pascal Juma", "a Web Developer", "a Game Developer", "an ML Enthusiast"],
+    words: [
+      "Pascal Juma",
+      "a Web Developer",
+      "a Game Developer",
+      "an ML Enthusiast",
+    ],
     loop: true,
     typeSpeed: 150,
     deleteSpeed: 150,
@@ -133,6 +146,41 @@ function Home() {
             >
               Download CV
             </HeroCta>
+            <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
+              <Tooltip title="GitHub" arrow>
+                <IconButton
+                  component="a"
+                  href="https://github.com/Pascal-Juma"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ fontSize: 29, color: "var(--green-color)" }}
+                >
+                  <FaGithub />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="LinkedIn" arrow>
+                <IconButton
+                  sx={{ fontSize: 29, color: "var(--green-color)" }}
+                  component="a"
+                  href="https://www.linkedin.com/in/pascal-juma/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="Twitter" arrow>
+                <IconButton
+                  sx={{ fontSize: 29, color: "var(--green-color)" }}
+                  component="a"
+                  href="https://x.com/PascalJuma4747"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaXTwitter />
+                </IconButton>
+              </Tooltip>
+            </Stack>
           </div>
           <div className="image-container">
             <div className="image-content">
