@@ -6,10 +6,13 @@
 }
 :root{
     --primary-color: #FFFFFF;
+    --color-red: #ff3d00;
     --darken-white: #FFFFFFCC;
     --secondary-color: #333333;
     --color-black: #0F1215;
     --contrast-black: #1e1f20;
+        --grey-color: #222524;
+        --grey-contrast: #464545;
     --third-color:#7C838E;
     --light-grey: #C5C5C5;
     --prime-color: #050505;

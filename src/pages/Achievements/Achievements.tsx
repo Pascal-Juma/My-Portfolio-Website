@@ -3,7 +3,6 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
-import "./Achievements.css";
 import Plate from "../../components/Plate/Plate";
 
 function Achievements() {
