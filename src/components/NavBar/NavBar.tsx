@@ -13,8 +13,10 @@ function NavBar() {
     const changeColor = () => {
       if (window.scrollY >= 90) {
         setColor(true);
+        console.log( "color true")
       } else {
         setColor(false);
+                console.log( "color false")
       }
     };
 
