@@ -5,9 +5,10 @@
     padding: 12px;
     font-weight: 500;
     padding-inline: 90px;
-    position: sticky;
-    top:0;
+    position: fixed;
+    top: 0;
     left: 0;
+    right: 0;
     z-index: 1000;
 }
 .scroll-nav{

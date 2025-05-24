@@ -13,13 +13,6 @@ function Achievements() {
     deleteSpeed: 150,
   });
 
-  const [texta] = useTypewriter({
-    words: ["Contact"],
-    loop: true,
-    typeSpeed: 150,
-    deleteSpeed: 150,
-  });
-
   return (
     <Element name="achievements">
       <Typography
@@ -61,23 +54,6 @@ function Achievements() {
           reason="Awarded in recognition of participating in the OriginFest Hackathon challenge."
           link="https://drive.google.com/file/d/1pLnluSWdkD-dzCnz_njzTtbpIp5apqdF/view?usp=sharing"
         />
-        <Typography
-          fontFamily="var(--prime-font)"
-          color="var(--green-color)"
-          fontSize="31px"
-          textAlign="center"
-          mt={2}
-          sx={{
-            position: "absolute",
-            bottom: "5%",
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          <HorizontalRuleIcon />
-          {texta}
-          <Cursor />
-        </Typography>
       </Stack>
     </Element>
   );

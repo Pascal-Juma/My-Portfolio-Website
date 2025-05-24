@@ -3,6 +3,8 @@ import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import { FaPhoneAlt, FaLongArrowAltRight } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { styled } from "@mui/material/styles";
@@ -46,6 +48,14 @@ const StyledField = styled(TextField)({
 });
 
 function Contact() {
+
+    const [text] = useTypewriter({
+      words: ["Contact"],
+      loop: true,
+      typeSpeed: 150,
+      deleteSpeed: 150,
+    });
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -60,6 +70,18 @@ function Contact() {
   return (
     <>
       <Element name="contact">
+              <Typography
+                fontFamily="var(--prime-font)"
+                color="var(--green-color)"
+                fontSize="31px"
+                textAlign="center"
+                mt={2}
+                mb={3}
+              >
+                <HorizontalRuleIcon />
+                {text}
+                <Cursor />
+              </Typography>
         <Stack
           direction={{ xs: "column", sm: "column", md: "row" }}
           sx={{
@@ -67,7 +89,7 @@ function Contact() {
             justifyContent: "center",
             alignItems: "center",
             gap: 3,
-            mb: 3,
+            mb: 5,
             p: 2,
           }}
         >

@@ -92,6 +92,7 @@ function Home() {
               lg: "flex-start",
             },
             marginLeft: 7,
+            mt: 6,
             maxHeight: "84.8vh",
           }}
         >
@@ -144,7 +145,7 @@ function Home() {
               size="large"
               startIcon={<DownloadIcon />}
             component="a"
-            href="https://drive.google.com/file/d/1xJaDtG7idQe4al9sQNfO1eRlUQNxuMBI/view?usp=sharing"
+            href="https://docs.google.com/document/d/1KQ7Dj3sMgv6e_k3hMzOqo4i1rhSCcuoUSh6HlgGlvjM/edit?usp=sharing"
             // @ts-expect-error: target and rel are valid on anchor elements
             target="_blank"
             rel="noopener noreferrer"
