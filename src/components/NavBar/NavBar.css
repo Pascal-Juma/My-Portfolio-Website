@@ -5,11 +5,9 @@
     padding: 12px;
     font-weight: 500;
     padding-inline: 90px;
-    position: sticky;
-     height: 60px;
+    position: fixed;
     top:0;
     left: 0;
-    background-color: transparent;
     z-index: 1000;
 }
 .scroll-nav{
