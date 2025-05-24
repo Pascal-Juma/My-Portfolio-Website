@@ -143,6 +143,11 @@ function Home() {
               variant="contained"
               size="large"
               startIcon={<DownloadIcon />}
+            component="a"
+            href="https://drive.google.com/file/d/1xJaDtG7idQe4al9sQNfO1eRlUQNxuMBI/view?usp=sharing"
+            // @ts-expect-error: target and rel are valid on anchor elements
+            target="_blank"
+            rel="noopener noreferrer"
             >
               Download CV
             </HeroCta>
