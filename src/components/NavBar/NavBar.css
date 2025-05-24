@@ -5,7 +5,7 @@
     padding: 12px;
     font-weight: 500;
     padding-inline: 90px;
-    position: fixed;
+    position: sticky;
     top:0;
     left: 0;
     z-index: 1000;
