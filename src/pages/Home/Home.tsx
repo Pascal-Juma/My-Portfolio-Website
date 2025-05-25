@@ -145,7 +145,7 @@ function Home() {
               size="large"
               startIcon={<DownloadIcon />}
             component="a"
-            href="https://docs.google.com/document/d/1KQ7Dj3sMgv6e_k3hMzOqo4i1rhSCcuoUSh6HlgGlvjM/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1t7BxBYeVvFpa-NwhSiQBbfN_py0S0uQZmBkCJL-TJkI/edit?usp=sharing"
             // @ts-expect-error: target and rel are valid on anchor elements
             target="_blank"
             rel="noopener noreferrer"
